@@ -49,13 +49,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     }
 
     // Delete category
-    if($_POST['form_name']=='delete_category'){
+    if($_POST['form_name']=='delete_contact'){
         $id = $_POST['contact_id'];
 
         // Bind Params
         $contact->n_contact_id = $id;
         if($contact->delete()){
-            $flag = "Delete category successful!";
+            $flag = "Delete contact successful!";
         }
         
         
