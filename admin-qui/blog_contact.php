@@ -193,7 +193,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                                                     </div>
                                                 </div>
 
-                                                <div class="modal fade" id="delete_category<?php echo $rows['n_category_id']?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="delete_category<?php echo $rows['n_contact_id']?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                                     <div class="modal-dialog">
                                                         <form method="POST" action="">
                                                         <div class="modal-content">
