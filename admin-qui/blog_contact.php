@@ -50,7 +50,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
     // Delete category
     if($_POST['form_name']=='delete_category'){
-        $id = $_POST['category_id'];
+        $id = $_POST['contact_id'];
 
         // Bind Params
         $contact->n_contact_id = $id;
@@ -205,7 +205,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
                                                                 Are you sure that you want to delete this category?
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <input type="hidden" name="form_name" value="delete_category">
+                                                                <input type="hidden" name="form_name" value="delete_contact">
                                                                 <input type="hidden" name="contact_id" value="<?php echo $rows['n_contact_id']; ?>">
                                                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                                                 <button type="submit" class="btn btn-primary">Delete</button>
